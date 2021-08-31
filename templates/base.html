@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!--<meta http-equiv="x-ua-compatible" content="ie=edge">-->
+
+        <title>Empath- A Smart Feedback Assistant</title>
+
+        <!-- Font Awesome -->
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800,600,300,300italic,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+
+        <!-- Material Design Bootstrap -->
+        <link href="static/css/materialize.css" rel="stylesheet">
+
+        <!-- Magnific-popup css -->
+        <link href="static/css/magnific-popup.css" rel="stylesheet">
+
+        <!-- Bootstrap core CSS -->
+        <link href="static/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Material Design Bootstrap -->
+        <!--<link href="static/css/progressbar.css" rel="stylesheet">-->
+
+        <!-- Material Design Bootstrap -->
+        <link href="static/css/mdb.min.css" rel="stylesheet">
+
+
+
+        <!-- Your custom styles (optional) -->
+        <link href="static/css/style.css" rel="stylesheet">
+        <link href="static/css/responsive.css" rel="stylesheet">
+
+    </head>
+
+    <body data-spy="scroll" data-target=".navbar-desktop">
+        <!-- Start your project here-->
+        <!--Navbar-->
+
+        <div class='preloader'><div class='loaded'>&nbsp;</div></div>
+
+        <nav class="navbar navbar-fixed-top navbar-light bg-faded">
+            <!--Collapse button-->
+            <div class="container">
+                <a href="#" data-activates="mobile-menu" class="button-collapse right"><i class="fa fa-bars black-text"></i></a>
+
+                <!--Content for large and medium screens-->
+                <div class="navbar-desktop">
+                    <!--Navbar Brand-->
+                    <a class="navbar-brand" href="#home"><img src="static/img/logo.png" alt="" /></a>
+                    <!--Links-->
+                    <ul class="nav navbar-nav pull-right hidden-md-down text-uppercase">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'index' %}" >Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'index' %}#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'index' %}#service">Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'index' %}#team">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'index' %}#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'index' %}#about">Faq</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" target="_blank" href="#!"><i class="fa fa-search fa-lg"></i></a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!-- Content for mobile devices-->
+                <div class="navbar-mobile">
+
+                    <ul class="side-nav" id="mobile-menu">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'index' %}#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'index' %}#service" >Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'index' %}#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'index' %}#newsletter" >Support</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'index' %}#about">Faq</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#!"><i class="fa fa-search fa-lg"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--/.Navbar-->
+
+
+
+
+
+
+
+
+
+
+        {% block body %}
+
+        {% endblock body %}
+
+
+
+        <section id="footer" class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="main_footer_area white-text p-b-3">
+                        <div class="col-md-4 ">
+                            <div class="single_f_widget p-t-3 wow fadeInUp">
+                                <img src="static/img/logo.png" alt="" />
+                                <div class="single_f_widget_text">
+                                    <p>Out Team- Dynamic has made this model to take honest feedbacks from people based on their facial expression and taking that into consideration we give a detailed statistical analysis of the feedback
+                                    over the Event.</p>
+                                    <div class="socail_f_widget">
+                                        <a href="#!" ><i class="fa fa-facebook"></i></a>
+                                        <a href="#!" ><i class="fa fa-google-plus"></i></a>
+                                        <a href="#!" ><i class="fa fa-twitter"></i></a>
+                                        <a href="#!" ><i class="fa fa-vimeo"></i></a>
+                                        <a href="#!" ><i class="fa fa-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="single_f_widget m-t-3 wow fadeInUp">
+                                <h4 class="text-lowercase">Some Features</h4>
+                                <div class="single_f_widget_text f_reatures">
+                                    <ul>
+                                        <li><i class="fa fa-check"></i>Honest Reviews</li>
+                                        <li><i class="fa fa-check"></i>Unbiased Feedbacks</li>
+                                        <li><i class="fa fa-check"></i>Expression recognizer</li>
+                                        <li><i class="fa fa-check"></i>Customisable Model</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="single_f_widget m-t-3 wow fadeInUp">
+                                <h4 class="text-lowercase">Tags</h4>
+                                <div class="single_f_widget_text f_tags">
+                                    <a href="#!">Machine Learning</a>
+                                    <a href="#!">Artificial Intelligence</a>
+                                    <a href="#!">Feedback Assistant</a>
+                                    <a href="#!">Face Recognition</a>
+                                    <a href="#!">Neural Network</a>
+                                    <a href="#!">KNN Classifier</a>
+                                    <a href="#!">AI Model</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main_coppyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-xs-12">
+                            <div class="copyright_text m-t-2 text-xs-center">
+                                <p class="wow zoomIn" data-wow-duration="1s">Made with <i class="fa fa-heart"></i> by <a target="_black" href="http://bootstrapthemes.co"> Team Dynamic</a> 2021. All Rights Reserved</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="socail_coppyright text-sm-right m-t-2 text-xs-center wow zoomIn">
+                                <a href="#!"><i class="fa fa-facebook"></i></a>
+                                <a href="#!"><i class="fa fa-twitter"></i></a>
+                                <a href="#!"><i class="fa fa-google-plus"></i></a>
+                                <a href="#!"><i class="fa fa-rss"></i></a>
+                                <a href="#!"><i class="fa fa-vimeo"></i></a>
+                                <a href="#!"><i class="fa fa-pinterest"></i></a>
+                                <a href="#!"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <!-- /Start your project here-->
+
+
+        <!-- SCRIPTS -->
+
+        <!-- JQuery -->
+        <script type="text/javascript" src="static/js/jquery-2.2.3.min.js"></script>
+
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="static/js/tether.min.js"></script>
+
+
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="static/js/mdb.min.js"></script>
+
+        <!-- Wow js -->
+        <script type="text/javascript" src="static/js/wow.min.js"></script>
+
+        <!-- Mixitup js -->
+        <script type="text/javascript" src="static/js/jquery.mixitup.min.js"></script>
+
+        <!-- Magnific-popup js -->
+        <script type="text/javascript" src="static/js/jquery.magnific-popup.js"></script>
+
+        <!-- accordion js -->
+        <script type="text/javascript" src="static/js/accordion.js"></script>
+
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="static/js/materialize.js"></script>
+
+        <script>
+            $(".button-collapse").sideNav();
+        </script>
+
+        <!-- wow js active -->
+        <script type="text/javascript">
+            new WOW().init();
+        </script>
+
+        <script type="text/javascript" src="static/js/plugins.js"></script>
+        <script type="text/javascript" src="static/js/main.js"></script>
+
+
+    </body>
+</html>
